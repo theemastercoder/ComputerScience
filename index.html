@@ -8,7 +8,7 @@
 
 
 body{
-background-color: rgb(31, 24, 24)
+background-color:#5f9cab;
 
 
 }
@@ -23,8 +23,14 @@ html, body {
   flex-direction: column;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
+
+
+  scroll-snap-type: y mandatory; 
+  overflow-y: scroll;
+  
 }
-.Main content {
+.Main-content {
     flex: 1;
     
 }
@@ -32,7 +38,7 @@ html, body {
 .Tab-bar {
     display: inline-block; 
     margin: 5px;
-    background-color:rgb(60, 59, 56);
+    
     align-self: center;
     border-radius: 5px;
 padding: 0.3px;
@@ -53,12 +59,12 @@ padding: 0.3px;
 
 .Tab-bar li {
   position: relative;
-  font-size: 15px;
+  font-size: 20px;
   font-family: sans-serif;
-  margin-right: 10px;
+  margin-right: 40px;
   padding-bottom: 4px; /* space for underline */
   transition: transform 0.3s ease;
-  color: blanchedalmond;
+  
   font-family: sans-serif;
   
 }
@@ -69,8 +75,8 @@ padding: 0.3px;
   left: 0;
   bottom: 0;
   width: 0%;
-  height: 2px;
-  background-color: rgb(241, 133, 0);
+  height: 3px;
+  background-color: #38ff60;
   transition: width 0.3s ease;
 }
 
@@ -84,16 +90,7 @@ padding: 0.3px;
 }
 
 
-.Tab2 {
-    display: inline-block; 
-    margin: 5px;
-    background-color:#C7FF69;
-    align-self: center;
-    border-radius: 5px;
-padding: 5px;
-  transition: border-radius 0.3s ease; 
 
-}
 
 .Tab2 ul {
     list-style: none;
@@ -107,12 +104,12 @@ padding: 5px;
 
 .Tab2 li {
   position: relative;
-  font-size: 15px;
+  font-size: 30px;
   font-family: sans-serif;
   margin-right: 10px;
   padding-bottom: 4px;
   
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: sans-serif;
   
 }
@@ -136,41 +133,14 @@ img{
 
 }
 
-footer {
-  position:relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  padding-right: 100px;
-  z-index: 100;
-  right: 0;
-}
 
-.footer-container {
- 
-  margin: auto;
-  width: 100%;
-  text-align: center;
-}
-
-footer a {
-  color: #aaa;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: white;
-}
 
 h1{
 font-style: oblique;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blanchedalmond;
+    color: rgb(0, 0, 0);
     margin-left: 20;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration-line: underline;
 
  
     
@@ -185,7 +155,8 @@ li a{
 
   text-decoration: none;
   font-family: sans-serif;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
+
 }
 #WHOAMI {
   display: flex;
@@ -195,10 +166,10 @@ margin-top: 10px;
 margin: 0 auto;            
   margin-top: 2vh;   
 width: 60%;
-background-color: #FF6D38;
+
 height: auto;
 border-radius: 20px;
- 
+
 
 }
 
@@ -212,7 +183,7 @@ border-radius: 20px;
   font-family: "Lilita One", sans-serif;
   text-align: left;
   padding: 20px;
-  text-shadow: rgb(255, 255, 255) 1px 1px;
+text-decoration-line: none;
 }
 
 .name-left {
@@ -228,56 +199,7 @@ border-radius: 20px;
 }
 
 
-.icons{
 
-  display: flex;           
-  gap: 1px;               
-  padding: 10px;
- 
-justify-content: space-around;
-  margin-top: 10px;
-}
-
-#i1{
-
-  background-color: #00A652;
-
-}
-#i2{
-
-  background-color: #FFC412;
-
-}
-#i3{
-
-  background-color: #478BFF;
- 
-}
-#i4{
-
-  background-color: #FF6D38;
-
-}
-
-#i5{
-
-  background-color: #7A78FF;
- 
-}
-.icon{
-width: 15%;
-height: 190px;
-  background-color: #7A78FF;
-  align-content: center;
-  border-radius: 20px;
-    display: flex;
-  justify-content: center;
-   align-items: center;
-    transition: border-radius 0.3s ease;
- 
-
-
-}
 .anton-regular {
   font-family: "Anton", sans-serif;
   font-weight: 400;
@@ -290,31 +212,7 @@ height: 190px;
   font-style: normal;
 }
 
-.glow1 {
-  filter: drop-shadow(0 0 6px #00A652) drop-shadow(0 0 10px #00A652);
-  transition: filter 0.3s ease;
 
-
-}
-.glow2 {
-  filter: drop-shadow(0 0 6px #FFC412) drop-shadow(0 0 10px #FFC412);
-  transition: filter 0.3s ease;
-}
-
-.glow3 {
-  filter: drop-shadow(0 0 6px #478BFF) drop-shadow(0 0 10px #478BFF);
-  transition: filter 0.3s ease;
-}
-
-.glow4 {
-  filter: drop-shadow(0 0 6px #FF6D38) drop-shadow(0 0 10px #FF6D38);
-  transition: filter 0.3s ease;
-}
-
-.glow5 {
-  filter: drop-shadow(0 0 6px #7A78FF) drop-shadow(0 0 10px #7A78FF);
-  transition: filter 0.3s ease;
-}
 
 
 
@@ -329,91 +227,64 @@ height: 190px;
 }
 
 .styled li {
-  padding: 10px 15px;
+  padding: 5px 15px;
   margin-bottom: 8px;
-  background-color: #f0f4ff;
+  background-color: #a3d9e7;
   border-left: 5px solid #3b82f6; 
   border-radius: 8px;
-  transition: background-color 0.3s;
-   transition: border-left 0.3s;
+  transition: background-color 0.3s, border-left 0.3s;
 
 }
 
 .styled li:hover {
-  background-color: #e0ecff;
+  background-color: #afebf7;
   cursor: pointer;
 
 border-left: 10px solid #3b82f6; 
 }
+.Main-content {
+        
+      
 
-/* The switch - the box around the slider */
-.switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 2em;
+height: 90%;
+box-shadow: 10px 10px black;
+ border-radius: 10px;
+  gap: 1px;
+  padding: 10px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #d2ecf0;
+  scroll-snap-align: start;
+  scroll-margin-top: 20px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+#top{
+
+  scroll-snap-align: start;
 }
 
-/* The slider */
-.slider {
-  --background: #28096b;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--background);
-  transition: .5s;
-  border-radius: 30px;
-}
+#qualifications{
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
-  background: var(--background);
-  transition: .5s;
-}
-
-input:checked + .slider {
-  background-color: #522ba7;
-}
-
-input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #fff000;
-}
-
+  margin-top: -30px;
+} 
 
         </style>
     </head>
     <body>
 
     
-    
+   <div id="top">
 <ul>
 <div class="Tab-bar">
    <div class="Tab-bar">
   <ul>
-    <li><a href="#h">Experience</a></li>
-    <li><a href="#hh">Skills</a></li>
-    <li><a href="#hhh">Personality</a></li>
-    <li><a href="#hhhh">Qualifications</a></li>
-    <li><a href="#hhhhh">Contact</a></li>
+  <li><a href="#skills">Skills</a></li>
+<li><a href="#qualifications">Qualifications</a></li>
+<li><a href="#projects">Projects</a></li>
+
   </ul>
  
  
@@ -421,17 +292,6 @@ input:checked + .slider:before {
 
 </div>
 
-<div class="Tab2">
- <ul id="hire">
-
-  <li>Hire now</li>
-  </ul>
-
-</div>
- <label class="switch">
-    <input type="checkbox">
-    <span class="slider"></span>
-</label>
 
     
     <div id="WHOAMI">
@@ -449,213 +309,51 @@ input:checked + .slider:before {
 </div>
 
 </h1>
+
  </div>
+ </div> 
+<div style="height: 60vh;"></div>
+ <div class="Main-content">
+       
+<div class="boxes" id="qualifications">
+  <h1>Qualifications:</h1>
 
-    <div class="icons">
-<div id="i1" class="icon">
-  <svg width="100" height="100" viewBox="0 0 100 100" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <!-- Water waves -->
-  <path d="M5 75 C15 85, 35 65, 45 75 C55 85, 75 65, 85 75 C95 85, 105 65, 115 75" stroke="black" stroke-width="2" fill="none"/>
-  
-  <!-- Head -->
-  <circle cx="50" cy="35" r="7" fill="black"/>
-
-  <!-- Arm throwing ball -->
-  <path d="M50 35 L70 20" stroke="black" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="72" cy="18" r="5" fill="black"/> <!-- Ball -->
-
-  <!-- Body -->
-  <path d="M50 42 L50 60" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Arms -->
-  <path d="M50 45 L40 55" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Water base -->
-  <path d="M20 65 C30 70, 40 60, 50 65 C60 70, 70 60, 80 65" stroke="black" stroke-width="2" fill="none"/>
-</svg>
-
-</div>
-<div id="i2" class="icon">
-   <svg width="100" height="100" viewBox="0 0 100 100" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <!-- Water waves -->
-  <path d="M5 75 C15 85, 35 65, 45 75 C55 85, 75 65, 85 75 C95 85, 105 65, 115 75" stroke="black" stroke-width="2" fill="none"/>
-  
-  <!-- Head -->
-  <circle cx="50" cy="35" r="7" fill="black"/>
-
-  <!-- Arm throwing ball -->
-  <path d="M50 35 L70 20" stroke="black" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="72" cy="18" r="5" fill="black"/> <!-- Ball -->
-
-  <!-- Body -->
-  <path d="M50 42 L50 60" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Arms -->
-  <path d="M50 45 L40 55" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Water base -->
-  <path d="M20 65 C30 70, 40 60, 50 65 C60 70, 70 60, 80 65" stroke="black" stroke-width="2" fill="none"/>
-</svg>
-</div>
-<div id="i3" class="icon">
-   <svg width="100" height="100" viewBox="0 0 100 100" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <!-- Water waves -->
-  <path d="M5 75 C15 85, 35 65, 45 75 C55 85, 75 65, 85 75 C95 85, 105 65, 115 75" stroke="black" stroke-width="2" fill="none"/>
-  
-  <!-- Head -->
-  <circle cx="50" cy="35" r="7" fill="black"/>
-
-  <!-- Arm throwing ball -->
-  <path d="M50 35 L70 20" stroke="black" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="72" cy="18" r="5" fill="black"/> <!-- Ball -->
-
-  <!-- Body -->
-  <path d="M50 42 L50 60" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Arms -->
-  <path d="M50 45 L40 55" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Water base -->
-  <path d="M20 65 C30 70, 40 60, 50 65 C60 70, 70 60, 80 65" stroke="black" stroke-width="2" fill="none"/>
-</svg>
-</div>
-<div id="i4" class="icon">
-   <svg width="100" height="100" viewBox="0 0 100 100" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <!-- Water waves -->
-  <path d="M5 75 C15 85, 35 65, 45 75 C55 85, 75 65, 85 75 C95 85, 105 65, 115 75" stroke="black" stroke-width="2" fill="none"/>
-  
-  <!-- Head -->
-  <circle cx="50" cy="35" r="7" fill="black"/>
-
-  <!-- Arm throwing ball -->
-  <path d="M50 35 L70 20" stroke="black" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="72" cy="18" r="5" fill="black"/> <!-- Ball -->
-
-  <!-- Body -->
-  <path d="M50 42 L50 60" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Arms -->
-  <path d="M50 45 L40 55" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Water base -->
-  <path d="M20 65 C30 70, 40 60, 50 65 C60 70, 70 60, 80 65" stroke="black" stroke-width="2" fill="none"/>
-</svg>
-</div>
-<div id="i5" class="icon">
-   <svg width="100" height="100" viewBox="0 0 100 100" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <!-- Water waves -->
-  <path d="M5 75 C15 85, 35 65, 45 75 C55 85, 75 65, 85 75 C95 85, 105 65, 115 75" stroke="black" stroke-width="2" fill="none"/>
-  
-  <!-- Head -->
-  <circle cx="50" cy="35" r="7" fill="black"/>
-
-  <!-- Arm throwing ball -->
-  <path d="M50 35 L70 20" stroke="black" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="72" cy="18" r="5" fill="black"/> <!-- Ball -->
-
-  <!-- Body -->
-  <path d="M50 42 L50 60" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Arms -->
-  <path d="M50 45 L40 55" stroke="black" stroke-width="4" stroke-linecap="round"/>
-
-  <!-- Water base -->
-  <path d="M20 65 C30 70, 40 60, 50 65 C60 70, 70 60, 80 65" stroke="black" stroke-width="2" fill="none"/>
-</svg>
-</div>
-
-
-    </div>
-<script>
-const icons = document.querySelectorAll('.icons > div');
-let current = 0;
-let glowClasses = ['glow1', 'glow2', 'glow3', 'glow4', 'glow5'];
-
-setInterval(() => {
-  icons.forEach((icon) => {
-    icon.classList.remove(...glowClasses); 
-  });
-
-  
-  icons[current].classList.add(glowClasses[current % glowClasses.length]);
-
-
-  current = Math.floor(Math.random() * (5)) ;
-}, 2000);
-
-const container = document.querySelector('.icons');
-
-function shuffleBoxes() {
-  const boxes = Array.from(container.children);
-
- 
-  for (let i = boxes.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [boxes[i], boxes[j]] = [boxes[j], boxes[i]];
-  }
-
-
-  container.innerHTML = '';
-  boxes.forEach(box => container.appendChild(box));
-}
-
-container.addEventListener('click', shuffleBoxes);
-
-</script>
-
-    <div class="Main-content">
-        <div id="hh">
-<div class="Experience" id="h">
-<h1>Experience:</h1>
 <ul class="styled">
-    <li>yap</li>
-    <li>yap</li>
-    <li>yap</li>
+    <li>Level 1 NCEA mathmatics Merit endorsed</li>
+    <li>Duke of Ed Bronze </li>
+   
+    
 </ul>
  
 </div>
-<div class="Skills" id="hh" >
-    <h1>Skills:</h1>
-    <ul>
-        <li>yap</li>
-        <li>yap</li>
+<div class="boxes" id="skills">
+  <h1>Skills:</h1>
+
+    <ul class="styled">
+        <li>Python problem solving</li>
+        <li>Website design html css</li>
         <li>yap</li>
     </ul>
  
 </div>
-</div>
-<div class="Personality" id="hhh">
-    <h1>Personality:</h1>
-    <ul>
+
+<div class="boxes" id="projects">
+  <h1>Projects:</h1>
+
+    <ul class="styled">
         <li>yap</li>
         <li>yap</li>
         <li>yap</li>
     </ul>
-  
+  </div>
 </div>
 
-<div class="Qualifications" id="hhhh">
-    <h1>Qualifications:</h1>
-    <ul>
-        <li>yap</li>
-        <li>yap</li>
-        <li>yap</li>
-    </ul>
+
 
 </div>
-    </div>
+ 
 
-<footer>
-    <div class="footer-container">
-      <p>&copy; 2025 YourWebsiteName. All rights reserved.</p>
-      <p id = "hhhhh">Contact: email@example.com | +1 234 567 8901</p>
-      <div class="socials">
-        <a href="#">Facebook</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">Twitter</a>
-      </div>
-    </div>
-  </footer>
+
   
 
 
