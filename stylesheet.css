@@ -501,6 +501,8 @@ color: white;
   color:rgb(118, 122, 236);
 }
 
+
+
 #skillsHeader{
 
 
@@ -790,4 +792,72 @@ background-color: #222222;
 #spacer{
 
   background: linear-gradient(#222222, white);
+}
+
+#projectHeader{
+
+  scroll-snap-align: start;
+   
+text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+ 
+  padding: 20px;
+text-decoration-line: underline;
+
+}
+#projectContainer{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+
+}
+
+.projectBox {
+width:40%;
+height:500px;
+border-radius: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projectTitle { 
+text-decoration:underline ;
+  font-family: "Lato", sans-serif;
+  font-size:2.5em;
+margin-top: 10px;
+
+  font-weight: 600;
+  font-style: normal;
+text-align: center;
+}
+
+.projectIMG{
+margin-top: 10px;
+
+  width: 90%;
+  height: auto;
+}
+
+.projectBlurb{
+
+
+   font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+color: black;
+ 
+  font-size: 25px;
+  
+  font-weight: 500;
+  padding:10px;
 }
