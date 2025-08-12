@@ -38,21 +38,7 @@
     </head>
     <body>
 
-      <script>
-  const dither = document.getElementById('dither');
-
-  dither.addEventListener('mouseenter', () => {
-    dither.style.animationDirection = 'normal';
-    dither.style.animationPlayState = 'running';
-    dither.style.animation = 'graphic 1s forwards';
-  });
-
-  dither.addEventListener('mouseleave', () => {
-    dither.style.animationDirection = 'reverse';
-    dither.style.animationPlayState = 'running';
-    dither.style.animation = 'graphic 1s forwards';
-  });
-</script>
+  
 <div style="visibility: hidden; position: absolute; width: 0; height: 0; overflow: hidden;">
 <img src="Images/1.png" alt="">
 <img src="Images/2.png" alt="">
@@ -92,11 +78,35 @@
     <ul>
             <li><a href="#aboutHeader" id="aboutLink">About</a></li>
       <li><a href="#skillsHeader" id="skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#projectHeader">Projects</a></li>
     </ul>
   </div>
-  <div id="contact1"><div id="text"><div id="orig">Say Hello</div><div id="new">Contact</div></div><span class="wave">👋</span></div>
+<div id="contact1" onclick="copyEmail()" style="cursor: pointer;">
+  <div id="text">
+    <div id="orig">Say Hello</div>
+    <div id="new">Contact</div>
+  </div>
+  <span class="wave">👋</span>
 </div>
+
+
+
+<script>
+function copyEmail() {
+  const email = "olivermcguinness590@gmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+    alert("Email copied to clipboard!");
+  }).catch(() => {
+    alert("Failed to copy email.");
+  });
+}
+</script>
+
+
+
+</div>
+
+
 
 
 <div id="together">
@@ -160,10 +170,25 @@ I have designed various websites with HTML, CSS and Javascript. I also write pyt
 
 </div>
 
-<div style="height: 600px;" ></div> 
+<div style="height:  100px;" ></div>
+<div id="projectHeader">Projects</div>
+<div id="projectContainer">
 
+<div id="project1" class="projectBox"> 
+  <div class="projectTitle">Waterpolo Whiteboard</div>
+  <img class="projectIMG" src="Images/wpwhite.png">
+   <div class="projectBlurb">This website was a combination of my personal interest in waterpolo and the niche problem of convienient, accessible tactics for the game. It was developed using html, css and lots of javascript. <a class="links" href="https://theemastercoder.github.io/whiteboard_wp/index.html">Waterpolo whiteboard</a></div>
+</div>
 
+<div  id="project2" class="projectBox">
 
+  <div class="projectTitle">CV website</div>
+  <img class="projectIMG" src="Images/CVIMG.png">
+  <div class="projectBlurb">Although a school project required the creation of this website, I hoped it would be the next step in my development to making functional modern websites (which it may or may not have been). Designed with html and CSS. Link in your search browser 😉.</div>
+</div>
+
+</div>
+<div style="height:  100px;" ></div>
 
 
 
